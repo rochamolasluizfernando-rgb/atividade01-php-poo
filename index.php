@@ -7,9 +7,12 @@ $planta = new Planta(
     "Echeveria elegans",
     1
 );
+
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,47 +32,43 @@ $planta = new Planta(
 
         <section class="cartao">
 
-            <h2>
-                <h2>Nome Popular</h2>
-            <p>
-                <?= $planta->getNome(); ?>
-            </p>
-            </h2>
+            <h2>Nome Popular</h2>
 
-        </section>
-
-        <section>
             <div class="informacao">
-                <span class="rotulo"></span>
-
-                <h2>Espécie científica</h2>
                 <span class="valor">
-                    <p>
-                        <?= $planta->getEspecie(); ?>
-                    </p>
+                    <?= $planta->getNome(); ?>
                 </span>
             </div>
 
             <div class="informacao">
-                <h2><span class="rotulo">Água recomendada por dia</span></h2>
-
+                <span class="rotulo">Espécie científica</span>
                 <span class="valor">
-                    <p>
-                        <?= $planta->getAguaPorDia(); ?> L
-                    </p>
+                    <?= $planta->getEspecie(); ?>
+                </span>
+            </div>
+
+            <div class="informacao">
+                <span class="rotulo">Água recomendada por dia</span>
+                <span class="valor">
+                    <?= $planta->getAguaPorDia(); ?> L
                 </span>
             </div>
 
             <div class="destaque">
-                <h2><strong>Recomendação para sete dias</strong></h2>
-
+                <strong>Recomendação para 7 dias</strong>
                 <p>
                     <?= $planta->calcularAguaSemanal(); ?> L
                 </p>
             </div>
+
         </section>
 
-        <h2><footer>Projeto desenvolvido com PHP e Programação Orientada a Objetos.</footer></h2>
+        <footer>
+            Projeto desenvolvido com PHP e Programação Orientada a Objetos.
+        </footer>
+
     </main>
+
 </body>
+
 </html>
