@@ -3,8 +3,8 @@
 require_once 'src/Planta.php';
 
 $planta = new Planta(
-    "Suculenta",
-    "Echeveria elegans",
+    "Orquídea",
+    "Phalaenopsis",
     1
 );
 
@@ -56,6 +56,7 @@ $planta = new Planta(
 
             <div class="destaque">
                 <strong>Recomendação para 7 dias</strong>
+                
                 <p>
                     <?= $planta->calcularAguaSemanal(); ?> L
                 </p>
